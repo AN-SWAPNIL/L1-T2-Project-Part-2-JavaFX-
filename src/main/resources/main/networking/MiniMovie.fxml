@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.process.MiniMovieController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="90.0" prefWidth="580.0" style="-fx-background-color: #888888;">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="280.0" spacing="1.0">
+               <children>
+                  <Label fx:id="TitleLabel" prefHeight="44.5" prefWidth="285.0" style="-fx-background-color: #444444;" text="Label" textFill="#93ff50">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="YearLabel" layoutX="10.0" layoutY="10.0" prefHeight="44.5" prefWidth="285.0" style="-fx-background-color: #444444;" text="Label" textFill="#93ff50">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="195.0" spacing="1.0">
+               <children>
+                  <Label fx:id="RunTimeLabel" prefHeight="44.5" prefWidth="197.0" style="-fx-background-color: #444444;" text="Label" textFill="#93ff50">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ProfitLabel" layoutX="10.0" layoutY="10.0" prefHeight="44.5" prefWidth="197.0" style="-fx-background-color: #444444;" text="Label" textFill="#93ff50">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="90.0" prefWidth="110.0" spacing="8.0" style="-fx-background-color: #888888;">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#showDetails" prefHeight="35.0" prefWidth="90.0" styleClass="mybutton" stylesheets="@Style.css" text="Details">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="transformButton" contentDisplay="CENTER" layoutX="16.0" layoutY="40.0" mnemonicParsing="false" onAction="#showPage" prefHeight="35.0" prefWidth="90.0" styleClass="mybutton" stylesheets="@Style.css">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

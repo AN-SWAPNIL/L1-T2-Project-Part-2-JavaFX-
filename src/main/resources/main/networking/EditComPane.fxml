@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="addMovie" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.process.EditCompanyController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="595.0" style="-fx-background-color: #444444;">
+            <children>
+            <Label prefHeight="30.0" prefWidth="595.0" style="-fx-background-color: #5555ee;" text="    # Production Company Logo Change" textFill="#d9ff3b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+                <HBox alignment="CENTER" prefHeight="80.0" prefWidth="595.0" spacing="50.0">
+                    <children>
+                        <Label text="Logo Link :" textFill="#93ff50">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ImageLink" prefHeight="30.0" prefWidth="396.0" promptText="eg. https://...*">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="595.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onImConfirm" prefHeight="35.0" prefWidth="100.0" stylesheets="@Style.css" text="Confirm">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onImReset" prefHeight="35.0" prefWidth="100.0" stylesheets="@Style.css" text="RESET">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+                </HBox>
+            <Label prefHeight="30.0" prefWidth="595.0" style="-fx-background-color: #5555ee;" text="    # Production Company Password Change" textFill="#d9ff3b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="595.0" spacing="20.0">
+               <children>
+                  <Label text="Old Password :" textFill="#93ff50">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="oldPassword" prefHeight="30.0" prefWidth="396.0" promptText="eg. sdn@ 832,?kkd...*">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="140.0" prefHeight="80.0" prefWidth="595.0" spacing="20.0">
+               <children>
+                  <Label text="New Password :" textFill="#93ff50">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="newPassword" prefHeight="30.0" prefWidth="396.0" promptText="Must contain at least 4 characters*">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="96.0" prefHeight="50.0" prefWidth="595.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onPassConfirm" prefHeight="35.0" prefWidth="100.0" stylesheets="@Style.css" text="Confirm">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onPassReset" prefHeight="35.0" prefWidth="100.0" stylesheets="@Style.css" text="RESET">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

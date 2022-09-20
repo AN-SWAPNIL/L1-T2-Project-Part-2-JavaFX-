@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.process.SearchPageController">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="205.0" style="-fx-background-color: #118811;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#d9ff3b" layoutX="17.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie World">
+                    <font>
+                        <Font name="Bank Gothic Medium BT" size="24.0" />
+                    </font></Text>
+                <VBox layoutX="27.0" layoutY="147.0" prefHeight="329.0" prefWidth="151.0" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onSearchTitle" prefHeight="38.0" prefWidth="156.0" stylesheets="@Style2.css" text="Search by Title" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onSearchYear" prefHeight="38.0" prefWidth="153.0" stylesheets="@Style2.css" text="Search by Year" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="59.0" mnemonicParsing="false" onAction="#onSearchGenre" prefHeight="38.0" prefWidth="174.0" stylesheets="@Style2.css" text="Search by Genre" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                  <Button layoutX="10.0" layoutY="108.0" mnemonicParsing="false" onAction="#onSearchTime" prefHeight="38.0" prefWidth="174.0" stylesheets="@Style2.css" text="Search by Time" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                        <Button layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onAction="#onMostRecent" prefHeight="38.0" prefWidth="162.0" stylesheets="@Style2.css" text="Most Recent" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                  <Button layoutX="10.0" layoutY="205.0" mnemonicParsing="false" onAction="#onMaxRevenue" prefHeight="38.0" prefWidth="162.0" stylesheets="@Style2.css" text="Max Revenue" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="254.0" mnemonicParsing="false" onAction="#onBack" prefHeight="38.0" prefWidth="162.0" stylesheets="@Style2.css" text="Back to Home">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </VBox>
+            <Text fill="#d9ff3b" layoutX="39.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="prName" fill="#05ffff" layoutX="13.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="179.63046264648438">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane fx:id="PaneTitle" prefHeight="500.0" prefWidth="595.0" BorderPane.alignment="CENTER">
+            <children>
+            <StackPane fx:id="TempPane" layoutX="1.0" layoutY="1.0" prefHeight="100.0" prefWidth="595.0" style="-fx-background-color: #ddeeee;" />
+            <AnchorPane fx:id="searchPane" layoutY="101.0" prefHeight="400.0" prefWidth="595.0">
+               <children>
+                  <Label layoutX="200.0" layoutY="185.0" text="No search occurred...">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            </children></AnchorPane>
+    </center>
+</BorderPane>

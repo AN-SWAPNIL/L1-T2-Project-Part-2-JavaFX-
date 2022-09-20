@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.process.TransferPageController">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="205.0" style="-fx-background-color: #5555ee;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#d9ff3b" layoutX="18.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie World">
+                    <font>
+                        <Font name="Bank Gothic Medium BT" size="24.0" />
+                    </font></Text>
+                <ImageView fx:id="PrImage" fitHeight="120.0" fitWidth="180.0" layoutX="12.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="27.0" layoutY="266.0" text="Transfer Movie to :" textFill="#d9ff3b">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="352.0" mnemonicParsing="false" onAction="#onConfirm" prefHeight="35.0" prefWidth="80.0" stylesheets="@Style.css" text="Confirm">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="439.0" mnemonicParsing="false" onAction="#onBack" prefHeight="38.0" prefWidth="153.0" stylesheets="@Style2.css" text="Back to Home">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="prCompanyBox" layoutX="10.0" layoutY="304.0" mnemonicParsing="false" prefWidth="185.0" text="Company Name">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </MenuButton>
+            <Button layoutX="112.0" layoutY="352.0" mnemonicParsing="false" onAction="#onReset" prefHeight="35.0" prefWidth="80.0" stylesheets="@Style.css" text="RESET">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Text fx:id="CompanyName" fill="#3fff05" layoutX="11.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="180.53671264648438">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="500.0" prefWidth="595.0" style="-fx-background-color: #ddeeee;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="46.0" layoutY="72.0" />
+                <AnchorPane fx:id="tempPane" layoutY="100.0" prefHeight="400.0" prefWidth="595.0" style="-fx-background-color: #cccccc;">
+                    <children>
+                        <Label layoutX="206.0" layoutY="185.0" text="There is No Movie!!">
+                            <font>
+                                <Font name="System Bold Italic" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Pane prefHeight="100.0" prefWidth="595.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <Text fx:id="textField" fill="#1ab41a" layoutX="26.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="429.7085723876953">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Text>
+                        <HBox alignment="CENTER" layoutY="60.0" prefHeight="40.0" prefWidth="595.0" style="-fx-background-color: #88ff88;">
+                     <children>
+                        <Text fx:id="totalMovies" fill="#a61d1d" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="281.18324851989746">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="totalProfit" fill="#a61d1d" layoutX="183.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="266.7830410003662">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                        </HBox>
+                    </children>
+                </Pane>
+            </children></AnchorPane>
+    </center>
+</BorderPane>
