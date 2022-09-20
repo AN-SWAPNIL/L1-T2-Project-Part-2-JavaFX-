@@ -104,9 +104,6 @@ public class MainApplication extends Application {
         new ReadThreadClient(this);
         socketWrapper.write("start");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginPage.fxml"));
-        System.out.println(getClass().getResource("LoginPage.fxml"));
-        System.out.println(getClass().getResource("HomePage.fxml"));
-        System.out.println(getClass().getResource("SearchPage.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setTitle("Login Page");
         System.out.println("in loginpage");
