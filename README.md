@@ -40,3 +40,5 @@ This is a movie database project with networking feature. One can log in as a Pr
 Hello curious man! If this repository is beneficial for you, I am happy. Thanks for visiting the repository. If you wanna thank me, just star the repository.
 
 ## Thank you for reading
+
+***##There have been a issue that... the links of Movie's poster I provided in this project have changed somehow. That's why you maybe won't see the correct poster. Sorry!***
